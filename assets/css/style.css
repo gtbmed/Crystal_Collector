@@ -1,0 +1,30 @@
+.crystalBox {
+	width: 80px;
+	height: 80px;
+	border: 1px solid blue;
+	margin: 5px;
+}
+
+.blueGem {
+	background: url("../images/blue.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.greenGem {
+	background: url("../images/green.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.redGem {
+	background: url("../images/red.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.yellowGem {
+	background: url("../images/yellow.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
