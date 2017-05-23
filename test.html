@@ -104,7 +104,7 @@ $(document).ready(function() {
    			win++;
    			$(".yourWins").text(win);
    			crystalValues = [];
-   			$("#crystalBoxes").detach();
+   			$("#crystalBoxes").empty();
    			playerValue = 0;
    			$(".yourSum").text(playerValue);
    			targetNumber = 19 + Math.floor(Math.random() * 120);
@@ -117,11 +117,11 @@ $(document).ready(function() {
    			lose++;
    			$(".yourLosses").text(lose);
    			crystalValues = [];
-   			$("#crystalBoxes").detach();
    			playerValue = 0;
    			$(".yourSum").text(playerValue);
    			targetNumber = 19 + Math.floor(Math.random() * 120);
    			$(".targetNumberBox").text(targetNumber);
+   			$("#crystalBoxes").empty();
    			newGame();
    		}
 	});

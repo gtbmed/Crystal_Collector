@@ -69,6 +69,7 @@ $(document).ready(function() {
 
 	//We'll make our game setup be a function so that it can be called again after each win or loss.
 	function newGame() {
+		$("#crystalBoxes").empty();
 		for (var i = 0; i < crystalColors.length; i++) {
 			crystalValues[i] = 1 + Math.floor(Math.random() * 12);
 			console.log(crystalValues);
@@ -82,13 +83,10 @@ $(document).ready(function() {
 			crystals.attr("data-crystalvalue", crystalValues[i]);
 			$("#crystalBoxes").append(crystals);
 		}
-	}
-	newGame();
+
 	//Function to add the values from each crystal clicked on to our total.  
 	// This taken from the CrystalExample and modified to fit the assignment.
-
-	//
-	$(".crystalClick").on("click", function() {
+		$(".crystalClick").on("click", function() {
 		//Get the assigned crystal value by calling it with jquery and assinging it to a variable
 		var addValue = ($(this).attr("data-crystalvalue"));
 		// Here we'll parse the value of the crystal clicked since calling it with jquery gives a string
@@ -103,8 +101,6 @@ $(document).ready(function() {
    			alert("You Win!");
    			win++;
    			$(".yourWins").text(win);
-   			crystalValues = [];
-   			$("#crystalBoxes").empty();
    			playerValue = 0;
    			$(".yourSum").text(playerValue);
    			targetNumber = 19 + Math.floor(Math.random() * 120);
@@ -116,15 +112,17 @@ $(document).ready(function() {
    			alert("You Lose!");
    			lose++;
    			$(".yourLosses").text(lose);
-   			crystalValues = [];
    			playerValue = 0;
    			$(".yourSum").text(playerValue);
    			targetNumber = 19 + Math.floor(Math.random() * 120);
    			$(".targetNumberBox").text(targetNumber);
-   			$("#crystalBoxes").empty();
    			newGame();
    		}
 	});
+
+	}
+// Start the game the first time
+	newGame();
 
 });
 </script>
