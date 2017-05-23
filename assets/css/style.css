@@ -1,3 +1,21 @@
+body {
+	background-image: url("../images/whirlpool.png");
+}
+
+h1, h3, h4 {
+	text-align: center;
+}
+
+p {
+ padding: 0 10px;
+}
+
+.page-header {
+	background-color: white;
+	padding-top: 1px;
+	border-radius: 20px;
+	border: solid 2px blue;
+}
 .crystalBox {
 	width: 80px;
 	height: 80px;
@@ -28,3 +46,29 @@
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+.instructionsBox {
+	background-color: #ccd6e8;
+	padding-top: 10px;
+}
+
+.targetBox {
+	background-color: #db3729;
+}
+
+.numberBox {
+	background-color: #f2ff3d;
+}
+
+.winLose {
+	background-color: #29db4a;
+}
+
+.rainbow {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
