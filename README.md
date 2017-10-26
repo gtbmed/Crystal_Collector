@@ -1,4 +1,4 @@
-![main screen](https://github.com/gtbmed/Crystal_Collector/assets/images/fullScreen.PNG "Full Screen View")
+![main screen](https://github.com/gtbmed/Crystal_Collector/blob/master/assets/images/fullScreen.PNG "Full Screen View")
 
 # Crystal_Collector
 
